@@ -86,6 +86,7 @@ typedef Mix_Chunk *PMix_Chunk, **PPMix_Chunk;
 #define BUTTON_IDENT_NONE      1100
 
 
+#define BACKGROUND_TEXTURE   "Resources//Background Texture.png"
 #define RULESSCREEN_TEXTURE  "Resources//RulesScreen.png"
 #define STARTSCREEN_TEXTURE  "Resources//StartofGameScreen.png"
 #define ENDSCREEN_TEXTURE    "Resources//EndOfGameScreen.png"

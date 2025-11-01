@@ -132,8 +132,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Initialize Application.cpp" />
     <ClCompile Include="Main Application.cpp" />
     <ClCompile Include="Tables.cpp" />
+    <ClCompile Include="Texture Handler.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Defines.h" />
