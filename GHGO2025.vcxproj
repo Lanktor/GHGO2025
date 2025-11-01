@@ -132,9 +132,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Button Handler.cpp" />
     <ClCompile Include="Initialize Application.cpp" />
     <ClCompile Include="Main Application.cpp" />
     <ClCompile Include="Tables.cpp" />
+    <ClCompile Include="Text Handler.cpp" />
     <ClCompile Include="Texture Handler.cpp" />
   </ItemGroup>
   <ItemGroup>

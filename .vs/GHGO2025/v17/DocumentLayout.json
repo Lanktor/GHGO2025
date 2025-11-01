@@ -7,6 +7,26 @@
       "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Prototype.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Text Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Text Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Button Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Button Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Tables.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Tables.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Texture Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Texture Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Initialize Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Initialize Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -15,20 +35,8 @@
       "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Main Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Initialize Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Initialize Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Texture Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Texture Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Structs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Structs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Tables.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Tables.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +46,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Text Handler.cpp",
+              "DocumentMoniker": "C:\\GHGO2025\\Text Handler.cpp",
+              "RelativeDocumentMoniker": "Text Handler.cpp",
+              "ToolTip": "C:\\GHGO2025\\Text Handler.cpp",
+              "RelativeToolTip": "Text Handler.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-01T20:56:53.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Button Handler.cpp",
+              "DocumentMoniker": "C:\\GHGO2025\\Button Handler.cpp",
+              "RelativeDocumentMoniker": "Button Handler.cpp",
+              "ToolTip": "C:\\GHGO2025\\Button Handler.cpp",
+              "RelativeToolTip": "Button Handler.cpp",
+              "ViewState": "AgIAACEAAAAAAAAAAADgvzAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-01T20:56:01.684Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -48,20 +82,20 @@
               "RelativeDocumentMoniker": "Prototype.h",
               "ToolTip": "C:\\GHGO2025\\Prototype.h",
               "RelativeToolTip": "Prototype.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-01T20:22:21.434Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Initialize Application.cpp",
               "DocumentMoniker": "C:\\GHGO2025\\Initialize Application.cpp",
               "RelativeDocumentMoniker": "Initialize Application.cpp",
               "ToolTip": "C:\\GHGO2025\\Initialize Application.cpp",
               "RelativeToolTip": "Initialize Application.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-01T20:09:25.802Z",
               "EditorCaption": ""
@@ -81,19 +115,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Tables.cpp",
               "DocumentMoniker": "C:\\GHGO2025\\Tables.cpp",
               "RelativeDocumentMoniker": "Tables.cpp",
               "ToolTip": "C:\\GHGO2025\\Tables.cpp",
               "RelativeToolTip": "Tables.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAADwvygAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-01T17:11:00.86Z"
+              "WhenOpened": "2025-11-01T17:11:00.86Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Structs.h",
               "DocumentMoniker": "C:\\GHGO2025\\Structs.h",
               "RelativeDocumentMoniker": "Structs.h",
@@ -101,12 +136,11 @@
               "RelativeToolTip": "Structs.h",
               "ViewState": "AgIAAGwAAAAAAAAAAADwv4QAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-01T17:05:56.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-01T17:05:56.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Defines.h",
               "DocumentMoniker": "C:\\GHGO2025\\Defines.h",
               "RelativeDocumentMoniker": "Defines.h",
@@ -114,12 +148,11 @@
               "RelativeToolTip": "Defines.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-01T17:05:40.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-01T17:05:40.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Main Application.cpp",
               "DocumentMoniker": "C:\\GHGO2025\\Main Application.cpp",
               "RelativeDocumentMoniker": "Main Application.cpp",
@@ -127,8 +160,7 @@
               "RelativeToolTip": "Main Application.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-01T17:00:19.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-01T17:00:19.652Z"
             }
           ]
         }
