@@ -19,3 +19,18 @@ INT BUTTON_IsButtonHover(PGAME_INFO GIptr, PBUTTON_INFO BIptr);
 INT BUTTON_ProcessClick(PGAME_INFO GIptr, PBUTTON_INFO BIptr);
 INT BUTTON_ResetButtonState(PGAME_INFO GIptr, PBUTTON_INFO BIptr, INT ButtonState);
 INT BUTTON_Update(PGAME_INFO GIptr, PBUTTON_INFO BIptr, INT DownOffset, INT HoverOffset);
+
+INT PLAYER_Initiate(PGAME_INFO GIptr);
+INT PLAYER_Render(PGAME_INFO GIptr);
+INT PLAYER_Update(PGAME_INFO GIptr);
+
+FLOAT UTIL_DegreesToRadians(FLOAT Degrees);
+FLOAT UTIL_RandomFloatRange(FLOAT Min, FLOAT Max);
+INT   UTIL_RandomIntRange(PUINT State, INT Min, INT Max);
+FLOAT UTIL_RadiansToDegrees(FLOAT Radians);
+
+INT TEST_Initiate(PGAME_INFO GIptr);
+INT TEST_Render(PGAME_INFO GIptr);
+INT TEST_Update(PGAME_INFO GIptr);
+
+

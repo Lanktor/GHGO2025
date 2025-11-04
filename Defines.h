@@ -65,7 +65,10 @@ typedef Mix_Chunk *PMix_Chunk, **PPMix_Chunk;
 #define LEVEL_SEVEN 7
 #define LEVEL_EIGHT 8
 #define LEVEL_NINE  9
-#define LEVEL_TEN   10
+#define LEVEL_TEN  10
+
+#define PLAYER_SPEED 200
+#define MAX_TEST_PLAYERS 100000
 
 #define BUTTON_STATE_UP        1000
 #define BUTTON_STATE_DOWN      1001

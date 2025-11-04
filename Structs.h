@@ -46,13 +46,20 @@ struct _ANIM_INFO
 
 struct _PLAYER_INFO
 {
-	INT         PI_Scale;
-	PSDL_FRect  PI_PlatformTable;
-	INT         PI_CurPlatform;
-	INT         PI_LastPlatform;
+	FLOAT       PI_Scale;
+
 	SDL_FRect   PI_GlobalPos;
 	SDL_FRect   PI_LocalPos;
-	PANIM_INFO  PI_Animation;
+
+	INT         PI_MaxSprites;    // This is for sprite List
+	INT         PI_CurSprite;     // This is current sprite rendered
+	INT         PI_FramesInTimer; // This is for time between switching frames
+	INT         PI_FrameTimer;    // Incremented Every Frame and checked against MaxFrames
+
+	FLOAT       PI_DirectionX;
+	FLOAT       PI_DirectionY;
+
+	PSDL_FRect  PI_SpriteList;    // Where the sprites are located
 };
 
 struct _BUTTON_INFO
@@ -133,6 +140,8 @@ struct _GAME_INFO
 	PSDL_Texture    GI_GameBoardTexture;
 	PSDL_Texture    GI_BackgroundTexture;
 	PSDL_Texture    GI_PlayerTexture;
+
+	PPLAYER_INFO    GI_TestPlayerTable[MAX_TEST_PLAYERS];
 
 };
 

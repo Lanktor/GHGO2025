@@ -16,7 +16,7 @@ INT GameLoop(PGAME_INFO GIptr)
 	INT          Quit, Keys, TestCounter, RetVal;
 	INT          I, ButtonIdent;
 	SDL_Event    Event;
-	SDL_FRect    Dest;
+	SDL_FRect    Srce, Dest;
 
 	GIptr->GI_TARGET_FPS = 80;
 	GIptr->GI_FRAME_DELAY = 1000 / GIptr->GI_TARGET_FPS;
@@ -103,12 +103,16 @@ INT GameLoop(PGAME_INFO GIptr)
 		GIptr->GI_DeltaTime = (GIptr->GI_CurTime - GIptr->GI_PrevTime) / 1000.0f;
 		GIptr->GI_PrevTime = GIptr->GI_CurTime;
 
+		PLAYER_Update(GIptr);
+		TEST_Update(GIptr);
 
-		SDL_SetRenderDrawColor(GIptr->GI_MainRenderer, 0x00, 0x00, 0x00, 0x00);
+		SDL_SetRenderDrawColor(GIptr->GI_MainRenderer, 0x80, 0x80, 0x80, 0x00);
 		SDL_RenderClear(GIptr->GI_MainRenderer);
 
 //		STARFIELD_RENDER(GIptr, TOTAL_STARS);
-//		SDL_RenderTexture(GIptr->GI_MainRenderer, GIptr->GI_BackgroundTexture, NULL, NULL);
+//		SDL_RenderTexture(GIptr->GI_MainRenderer, GIptr->GI_PlayerTexture, &Srce, &Dest);
+		PLAYER_Render(GIptr);
+		TEST_Render(GIptr);
 
 		CheckForLevelCompletion(GIptr);
 
@@ -120,7 +124,7 @@ INT GameLoop(PGAME_INFO GIptr)
 
 		if (SDL_GetTicks() >= GIptr->GI_SecondsCounter + 1000)
 		{
-			// printf("FPS: [%d] Delay = [%d]\n", GIptr->GI_FrameCounter, GIptr->GI_FRAME_DELAY - GIptr->GI_FrameTime);
+printf("FPS: [%d] Delay = [%d]\n", GIptr->GI_FrameCounter, GIptr->GI_FRAME_DELAY - GIptr->GI_FrameTime);
 			GIptr->GI_FrameCounter = 0;
 			GIptr->GI_SecondsCounter = SDL_GetTicks();
 		}

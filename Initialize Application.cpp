@@ -100,5 +100,8 @@ INT InitializeApplication(PGAME_INFO GIptr)
 		return(FALSE);
 	}
 
+	PLAYER_Initiate(GIptr);
+	TEST_Initiate(GIptr);
+
 	return(TRUE);
 }

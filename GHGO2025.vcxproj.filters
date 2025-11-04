@@ -48,6 +48,15 @@
     <ClCompile Include="Rules Handler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Player Handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Test Stuff.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Defines.h">
