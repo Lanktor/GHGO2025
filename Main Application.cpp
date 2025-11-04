@@ -11,9 +11,9 @@ INT main(INT Argc, PCHAR Argv[])
 	printf("Hello World!\n");
 
 	InitializeApplication(Gameptr);
-//	StartOfGameHandler(Gameptr);
-//	GameLoop(Gameptr);
-//	TerminateApplication(Gameptr);
+	StartOfGameHandler(Gameptr);
+	GameLoop(Gameptr);
+	TerminateApplication(Gameptr);
 
 	return(TRUE);
 }

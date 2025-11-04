@@ -150,16 +150,3 @@ INT BUTTON_ResetButtonState(PGAME_INFO GIptr, PBUTTON_INFO BIptr, INT ButtonStat
 
 	return(TRUE);
 }
-
-void draw_filled_circle(SDL_Renderer *renderer, int cx, int cy, int radius, SDL_Color color)
-{
-	SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, color.a);
-
-	for (int dy = -radius; dy <= radius; dy++)
-	{
-		int dx_limit = (int)sqrt(radius * radius - dy * dy);
-		int x1 = cx - dx_limit;
-		int x2 = cx + dx_limit;
-		SDL_RenderLine(renderer, x1, cy + dy, x2, cy + dy);
-	}
-}

@@ -7,6 +7,34 @@
 GAME_INFO Gamebuffer;
 PGAME_INFO Gameptr = &Gamebuffer;
 
+BUTTON_INFO RulesButtons[] =
+{
+	{BUTTON_IDENT_CONTINUE, BUTTON_STATE_UP,   48, 18, 0, 750, 211,  61,    30,   40, 211,  61, "RETURN"},
+	{BUTTON_IDENT_EXIT,     BUTTON_STATE_UP,   70, 18, 0, 750, 211,  61,    30,  110, 211,  61, "EXIT"},
+	{-1,  -1,   -1, -1, -1,  -1, -1, -1, -1,  -1},
+};
+
+
+BUTTON_INFO StartGameButtons[] =
+{
+	{BUTTON_IDENT_RULES,    BUTTON_STATE_UP,   62, 18, 0, 750, 211,  61,  20, 830, 211,  61, "RULES"},
+	{BUTTON_IDENT_PLAY,     BUTTON_STATE_UP,   72, 18, 0, 750, 211,  61,  20, 900, 211,  61, "PLAY"},
+	{BUTTON_IDENT_EXIT,     BUTTON_STATE_UP,   70, 18, 0, 750, 211,  61,  20, 970, 211,  61, "EXIT"},
+	{-1,  -1,   -1, -1, -1,  -1, -1, -1, -1,  -1},
+};
+
+BUTTON_INFO EndGameButtons[] =
+{
+	{BUTTON_IDENT_REPLAY,  BUTTON_STATE_UP,   48, 18, 0, 750, 211,  61,    30,   40, 211,  61, "REPLAY"},
+	{BUTTON_IDENT_EXIT,    BUTTON_STATE_UP,   70, 18, 0, 750, 211,  61,    30,  110, 211,  61, "EXIT"},
+	{-1,  -1,   -1, -1, -1,  -1, -1, -1, -1,  -1},
+};
+
+SDL_FRect HiScoreBox[] =
+{
+	{ 215,  140, 700, 400},
+};
+
 SDL_FRect FontAlphaWhite[] =
 {
 	{   0,  45, 21, 20}, // A

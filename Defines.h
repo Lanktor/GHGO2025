@@ -92,8 +92,8 @@ typedef Mix_Chunk *PMix_Chunk, **PPMix_Chunk;
 #define ENDSCREEN_TEXTURE    "Resources//EndOfGameScreen.png"
 #define PLAYER_TEXTURE       "Resources//Player TileSheet.png"
 #define TEXT_TEXTURE         "Resources//Text Sprites.png"
-#define MAIN_TEXTURE         "Resources//Main Tile Sheet .png"
-#define BACKGROUND_MUSIC     "Resources//Pixabay horror-playhouse-404813.mp3"
+#define MAIN_TEXTURE         "Resources//Main Tile Sheet.png"
+#define BACKGROUND_MUSIC     "Resources//Endless-Cyber-Runner-2.mp3"
 #define HI_SCORE_FILE        "Resources//HiScore.txt"
 
 
