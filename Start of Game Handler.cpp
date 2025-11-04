@@ -18,7 +18,6 @@ INT StartOfGameHandler(PGAME_INFO GIptr)
 	KeyState = SDL_GetKeyboardState(NULL);
 	Mix_PlayMusic(GIptr->GI_BkgMusic, -1);
 	Mix_VolumeMusic(80);
-	//	Mix_PlayChannel(-1, GIptr->GI_RainSFX, -1);
 
 	GIptr->GI_TARGET_FPS = 80;
 	GIptr->GI_FRAME_DELAY = 1000 / GIptr->GI_TARGET_FPS;

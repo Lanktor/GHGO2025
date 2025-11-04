@@ -67,8 +67,17 @@ typedef Mix_Chunk *PMix_Chunk, **PPMix_Chunk;
 #define LEVEL_NINE  9
 #define LEVEL_TEN  10
 
-#define PLAYER_SPEED 200
-#define MAX_TEST_PLAYERS 100000
+#define PLAYER_SPEED 100
+#define MAX_TEST_PLAYERS 5000
+
+#define MAX_OBJECTS                5000
+#define OBJECT_END_OF_LEVEL_LIST   2000
+
+#define TYPE_OBJ_NONE              1000
+#define TYPE_OBJ_SQUARE_GRADE0     1001
+#define TYPE_OBJ_SQUARE_GRADE1     1002
+#define TYPE_OBJ_SQUARE_GRADE2     1003
+#define TYPE_OBJ_SQUARE_GRADE3     1004
 
 #define BUTTON_STATE_UP        1000
 #define BUTTON_STATE_DOWN      1001

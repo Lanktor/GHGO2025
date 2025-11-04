@@ -21,6 +21,10 @@ typedef struct _PLAYER_INFO PLAYER_INFO, *PPLAYER_INFO, **PPPLAYER_INFO;
 #define SZ_PLAYER_INFO sizeof(_PLAYER_INFO)
 #define PLAYER_INFO_NULL (PPLAYER_INFO)0
 
+typedef struct _OBJ_INFO OBJ_INFO, *POBJ_INFO, **PPOBJ_INFO;
+#define SZ_OBJ_INFO sizeof(_OBJ_INFO)
+#define OBJ_INFO_NULL (POBJ_INFO)0
+
 
 typedef struct _ANIM_INFO ANIM_INFO, *PANIM_INFO, **PPANIM_INFO;
 #define SZ_ANIM_INFO sizeof(_ANIM_INFO)
@@ -61,6 +65,25 @@ struct _PLAYER_INFO
 
 	PSDL_FRect  PI_SpriteList;    // Where the sprites are located
 };
+
+struct _OBJ_INFO
+{
+	INT         OI_ActiveFlag;
+	INT         OI_Type;
+
+	FLOAT       OI_Scale;
+	FLOAT       OI_Speed;
+	SDL_FRect   OI_GlobalPos;
+	SDL_FRect   OI_LocalPos;
+
+	INT         OI_MaxSprites;    // This is for sprite List
+	INT         OI_CurSprite;     // This is current sprite rendered
+	INT         OI_FramesInTimer; // This is for time between switching frames
+	INT         OI_FrameTimer;    // Incremented Every Frame and checked against MaxFrames
+
+	PSDL_FRect  OI_SpriteList;    // Where the sprites are located
+};
+
 
 struct _BUTTON_INFO
 {
@@ -126,11 +149,9 @@ struct _GAME_INFO
 	PLAYER_INFO     GI_Player;
 	CHAR            GI_PlayerName[MAX_NAME_LENGTH + 1];
 	HI_SCORE        GI_HiScoreList[MAX_NAMES];
-	ANIM_INFO       GI_PlayerIdleAnim;
-	ANIM_INFO       GI_PlayerRunAnim;
 
-	INT             GI_ObjectTimer;
-	FLOAT           GI_ObjectSpeed;
+	POBJ_INFO       GI_OBJTable[MAX_OBJECTS];
+	INT             GI_ObjectLevelItems;
 
 	PSDL_Texture    GI_MainTexture;
 	PSDL_Texture    GI_TextTexture;

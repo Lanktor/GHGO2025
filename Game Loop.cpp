@@ -95,7 +95,7 @@ INT GameLoop(PGAME_INFO GIptr)
 		GIptr->GI_MissileCooldown++;
 		if (GIptr->GI_MouseDownFlag == TRUE)
 		{
-
+			PLAYER_Move(GIptr);
 		}
 		GIptr->GI_MouseState = SDL_GetMouseState(&GIptr->GI_MouseX, &GIptr->GI_MouseY);
 
@@ -104,15 +104,14 @@ INT GameLoop(PGAME_INFO GIptr)
 		GIptr->GI_PrevTime = GIptr->GI_CurTime;
 
 		PLAYER_Update(GIptr);
-		TEST_Update(GIptr);
+		OBJ_Update(GIptr);
 
 		SDL_SetRenderDrawColor(GIptr->GI_MainRenderer, 0x80, 0x80, 0x80, 0x00);
 		SDL_RenderClear(GIptr->GI_MainRenderer);
 
-//		STARFIELD_RENDER(GIptr, TOTAL_STARS);
-//		SDL_RenderTexture(GIptr->GI_MainRenderer, GIptr->GI_PlayerTexture, &Srce, &Dest);
 		PLAYER_Render(GIptr);
-		TEST_Render(GIptr);
+		OBJ_Render(GIptr);
+
 
 		CheckForLevelCompletion(GIptr);
 

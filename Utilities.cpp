@@ -40,3 +40,23 @@ FLOAT UTIL_DegreesToRadians(FLOAT Degrees)
 {
   return Degrees * (M_PI / 180.0);
 }
+
+INT UTIL_DrawCollisionBox(PGAME_INFO GIptr, PSDL_FRect SrceBox, SDL_Color Color, INT BorderSize)
+{
+  INT I;
+  SDL_FRect DestBox;
+
+  memcpy(&DestBox, SrceBox, SZ_SDL_FRECT);
+  SDL_SetRenderDrawColor(GIptr->GI_MainRenderer, Color.r, Color.g, Color.b, Color.a);
+
+  for (I = 0; I < BorderSize; I++)
+  {
+    SDL_RenderRect(GIptr->GI_MainRenderer, &DestBox);
+    DestBox.x -= 1;
+    DestBox.y -= 1;
+    DestBox.w += 2;
+    DestBox.h += 2;
+  }
+
+  return(TRUE);
+}

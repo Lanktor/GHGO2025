@@ -22,7 +22,7 @@ INT TEST_Initiate(PGAME_INFO GIptr)
 		PIptr->PI_FrameTimer = 0;
 		PIptr->PI_MaxSprites = 5;
 		PIptr->PI_CurSprite = 0;
-		PIptr->PI_Scale = 1.0f;
+		PIptr->PI_Scale = .5f;
 		PIptr->PI_GlobalPos.x = UTIL_RandomFloatRange(20, 1900);
 		PIptr->PI_GlobalPos.y = UTIL_RandomFloatRange(20, 1060);
 

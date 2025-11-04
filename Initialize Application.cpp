@@ -101,7 +101,8 @@ INT InitializeApplication(PGAME_INFO GIptr)
 	}
 
 	PLAYER_Initiate(GIptr);
-	TEST_Initiate(GIptr);
+	OBJ_Initiate(GIptr);
+	OBJ_BuildWAVEOne(GIptr);
 
 	return(TRUE);
 }
