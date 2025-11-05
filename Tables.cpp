@@ -35,7 +35,7 @@ SDL_FRect HiScoreBox[] =
 	{ 215,  140, 700, 400},
 };
 
-SDL_FRect OBJSquareStandard[] = 
+SDL_FRect EnemyBasicSprites[] = 
 {
 	{   0,  32,  32,  32},
 	{  32,  32,  32,  32},
@@ -46,6 +46,19 @@ SDL_FRect OBJSquareStandard[] =
 	{  64,  32,  32,  32},
 	{  32,  32,  32,  32},
 };
+
+SDL_FRect WeaponAutoSprites[] =
+{
+	{   0,   0,  16,  16},
+	{  16,   0,  16,  16},
+	{  32,   0,  16,  16},
+	{  48,   0,  16,  16},
+	{  64,   0,  16,  16},
+	{  48,   0,  16,  16},
+	{  32,   0,  16,  16},
+	{  16,   0,  16,  16},
+};
+
 
 SDL_FRect PlayerAnim[] =
 {

@@ -22,6 +22,8 @@ INT PLAYER_Initiate(PGAME_INFO GIptr)
 	PIptr->PI_Scale = 1.0f;
 	PIptr->PI_GlobalPos.x = (1920 / 2);
 	PIptr->PI_GlobalPos.y = (1080 / 2);
+	PIptr->PI_GlobalPos.w = PlayerAnim->w * PIptr->PI_Scale;
+	PIptr->PI_GlobalPos.h = PlayerAnim->h * PIptr->PI_Scale;
 
 	return(TRUE);
 }
@@ -38,7 +40,7 @@ INT PLAYER_Move(PGAME_INFO GIptr)
 	Dist = sqrtf(DX * DX + DY * DY);
 
 	if (Dist > 1.0f) 
-	{ // avoid jitter
+	{
 		VX = (DX / Dist) * PLAYER_SPEED * GIptr->GI_DeltaTime;
 		VY = (DY / Dist) * PLAYER_SPEED * GIptr->GI_DeltaTime;
 		PIptr->PI_GlobalPos.x += VX;
@@ -73,13 +75,10 @@ INT PLAYER_Render(PGAME_INFO GIptr)
 	INT          I;
 	PPLAYER_INFO PIptr;
 	PSDL_FRect   Srceptr;
-	SDL_FRect    CollBox;
 
 	PIptr = &GIptr->GI_Player;
 
 	Srceptr = &PIptr->PI_SpriteList[PIptr->PI_CurSprite];
-	PIptr->PI_GlobalPos.w = Srceptr->w * PIptr->PI_Scale;
-	PIptr->PI_GlobalPos.h = Srceptr->h * PIptr->PI_Scale;
 	SDL_RenderTexture(GIptr->GI_MainRenderer, GIptr->GI_PlayerTexture, Srceptr, &PIptr->PI_GlobalPos);
 
 	UTIL_DrawCollisionBox(GIptr, &PIptr->PI_GlobalPos, {0x00, 0x00, 0xFF, 0x00}, 2);

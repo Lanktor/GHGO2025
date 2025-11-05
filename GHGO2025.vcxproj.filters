@@ -57,7 +57,16 @@
     <ClCompile Include="Utilities.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Object Handler.cpp">
+    <ClCompile Include="Enemy Basic Handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Level Handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Auto Shot Weapons Handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer Handler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

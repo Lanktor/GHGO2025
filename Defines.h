@@ -40,6 +40,14 @@ typedef Mix_Chunk *PMix_Chunk, **PPMix_Chunk;
 #define OBJECT_IS_NOT_ACTIVE  5003
 #define LEVEL_IS_ACTIVE       5004
 #define LEVEL_IS_COMPLETE     5005
+#define NO_COLLISION_DETECTED 5006
+#define COLLISION_DETECTED    5007
+
+#define MAX_EBI_OBJECTS        200
+#define EBI_COOL_DOWN_FRAMES   9600 // 2mins * 80 Seconds * 60 FPS
+
+#define WAI_COOL_DOWN_FRAMES   160 // 2 Seconds * 80 FPS
+#define MAX_WAI_OBJECTS        100
 
 #define GAME_VERSION          100
 #define GAME_BASE_SCORE       5000

@@ -23,8 +23,7 @@ INT GameLoop(PGAME_INFO GIptr)
 
 	GIptr->GI_SecondsCounter = GIptr->GI_PrevTime = SDL_GetTicks();
 	GIptr->GI_FrameCounter = 0;
-	GIptr->GI_MissileCooldown = 0;
-	GIptr->GI_AddObjectsCooldown = 0;
+
 
 	KeyState = SDL_GetKeyboardState(NULL);
 	TestCounter = 0;
@@ -90,9 +89,6 @@ INT GameLoop(PGAME_INFO GIptr)
 		{
 		}
 
-		GIptr->GI_AddObjectsCooldown++;
-
-		GIptr->GI_MissileCooldown++;
 		if (GIptr->GI_MouseDownFlag == TRUE)
 		{
 			PLAYER_Move(GIptr);
@@ -103,14 +99,20 @@ INT GameLoop(PGAME_INFO GIptr)
 		GIptr->GI_DeltaTime = (GIptr->GI_CurTime - GIptr->GI_PrevTime) / 1000.0f;
 		GIptr->GI_PrevTime = GIptr->GI_CurTime;
 
+		TIMER_Update(GIptr);
+		TIMER_CheckExpired(GIptr);
+
 		PLAYER_Update(GIptr);
-		OBJ_Update(GIptr);
+		EBI_Update(GIptr);
+
+		WAI_Move(GIptr);
 
 		SDL_SetRenderDrawColor(GIptr->GI_MainRenderer, 0x80, 0x80, 0x80, 0x00);
 		SDL_RenderClear(GIptr->GI_MainRenderer);
 
 		PLAYER_Render(GIptr);
-		OBJ_Render(GIptr);
+		EBI_Render(GIptr);
+		WAI_Render(GIptr);
 
 
 		CheckForLevelCompletion(GIptr);

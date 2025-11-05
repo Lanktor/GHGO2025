@@ -132,12 +132,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Auto Shot Weapons Handler.cpp" />
     <ClCompile Include="Button Handler.cpp" />
     <ClCompile Include="End of Game Handler.cpp" />
+    <ClCompile Include="Enemy Basic Handler.cpp" />
     <ClCompile Include="Game Loop.cpp" />
     <ClCompile Include="Initialize Application.cpp" />
+    <ClCompile Include="Level Handler.cpp" />
     <ClCompile Include="Main Application.cpp" />
-    <ClCompile Include="Object Handler.cpp" />
     <ClCompile Include="Player Handler.cpp" />
     <ClCompile Include="Rules Handler.cpp" />
     <ClCompile Include="Start of Game Handler.cpp" />
@@ -146,6 +148,7 @@
     <ClCompile Include="Test Stuff.cpp" />
     <ClCompile Include="Text Handler.cpp" />
     <ClCompile Include="Texture Handler.cpp" />
+    <ClCompile Include="Timer Handler.cpp" />
     <ClCompile Include="Utilities.cpp" />
   </ItemGroup>
   <ItemGroup>

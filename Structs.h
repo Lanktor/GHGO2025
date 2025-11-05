@@ -21,10 +21,13 @@ typedef struct _PLAYER_INFO PLAYER_INFO, *PPLAYER_INFO, **PPPLAYER_INFO;
 #define SZ_PLAYER_INFO sizeof(_PLAYER_INFO)
 #define PLAYER_INFO_NULL (PPLAYER_INFO)0
 
-typedef struct _OBJ_INFO OBJ_INFO, *POBJ_INFO, **PPOBJ_INFO;
-#define SZ_OBJ_INFO sizeof(_OBJ_INFO)
-#define OBJ_INFO_NULL (POBJ_INFO)0
+typedef struct _ENEMY_BASIC_INFO ENEMY_BASIC_INFO, *PENEMY_BASIC_INFO, **PPENEMY_BASIC_INFO;
+#define SZ_ENEMY_BASIC_INFO sizeof(_ENEMY_BASIC_INFO)
+#define ENEMY_BASIC_INFO_NULL (PENEMY_BASIC_INFO)0
 
+typedef struct _WEAPON_AUTO_INFO WEAPON_AUTO_INFO, *PWEAPON_AUTO_INFO, **PPWEAPON_AUTO_INFO;
+#define SZ_WEAPON_AUTO_INFO sizeof(_WEAPON_AUTO_INFO)
+#define WEAPON_AUTO_INFO_NULL (PWEAPON_AUTO_INFO)0
 
 typedef struct _ANIM_INFO ANIM_INFO, *PANIM_INFO, **PPANIM_INFO;
 #define SZ_ANIM_INFO sizeof(_ANIM_INFO)
@@ -66,22 +69,40 @@ struct _PLAYER_INFO
 	PSDL_FRect  PI_SpriteList;    // Where the sprites are located
 };
 
-struct _OBJ_INFO
+struct _WEAPON_AUTO_INFO
 {
-	INT         OI_ActiveFlag;
-	INT         OI_Type;
+	INT         WAI_ActiveFlag;
 
-	FLOAT       OI_Scale;
-	FLOAT       OI_Speed;
-	SDL_FRect   OI_GlobalPos;
-	SDL_FRect   OI_LocalPos;
+	FLOAT       WAI_VX;
+	FLOAT       WAI_VY;
+	FLOAT       WAI_Scale;
+	FLOAT       WAI_Speed;
+	SDL_FRect   WAI_GlobalPos;
+	SDL_FRect   WAI_TargetPos;
 
-	INT         OI_MaxSprites;    // This is for sprite List
-	INT         OI_CurSprite;     // This is current sprite rendered
-	INT         OI_FramesInTimer; // This is for time between switching frames
-	INT         OI_FrameTimer;    // Incremented Every Frame and checked against MaxFrames
+	INT         WAI_MaxSprites;    // This is for sprite List
+	INT         WAI_CurSprite;     // This is current sprite rendered
+	INT         WAI_FramesInTimer; // This is for time between switching frames
+	INT         WAI_FrameTimer;    // Incremented Every Frame and checked against MaxFrames
 
-	PSDL_FRect  OI_SpriteList;    // Where the sprites are located
+	PSDL_FRect  WAI_SpriteList;    // Where the sprites are located
+};
+
+struct _ENEMY_BASIC_INFO
+{
+	INT         EBI_ActiveFlag;
+
+	FLOAT       EBI_Scale;
+	FLOAT       EBI_Speed;
+	SDL_FRect   EBI_GlobalPos;
+	SDL_FRect   EBI_LocalPos;
+
+	INT         EBI_MaxSprites;    // This is for sprite List
+	INT         EBI_CurSprite;     // This is current sprite rendered
+	INT         EBI_FramesInTimer; // This is for time between switching frames
+	INT         EBI_FrameTimer;    // Incremented Every Frame and checked against MaxFrames
+
+	PSDL_FRect  EBI_SpriteList;    // Where the sprites are located
 };
 
 
@@ -138,20 +159,23 @@ struct _GAME_INFO
 	PSDL_Renderer   GI_MainRenderer;
 	PMix_Music      GI_BkgMusic;
 
-	FLOAT           GI_MissileCooldown;
-	FLOAT           GI_MissileCoolDownTime;
+	FLOAT              GI_AddObjectsCooldown;
 
-	FLOAT           GI_AddObjectsCooldown;
+	FLOAT              GI_MaxPower;
+	FLOAT              GI_CurrentPower;
 
-	FLOAT           GI_MaxPower;
-	FLOAT           GI_CurrentPower;
+	PLAYER_INFO        GI_Player;
+	CHAR               GI_PlayerName[MAX_NAME_LENGTH + 1];
+	HI_SCORE           GI_HiScoreList[MAX_NAMES];
 
-	PLAYER_INFO     GI_Player;
-	CHAR            GI_PlayerName[MAX_NAME_LENGTH + 1];
-	HI_SCORE        GI_HiScoreList[MAX_NAMES];
+	PENEMY_BASIC_INFO  GI_EBITable[MAX_EBI_OBJECTS];
+	INT                GI_EBITotalItems;
+	FLOAT              GI_EBISpawnCoolDown;
+	FLOAT              GI_EBICurSpawnCoolDown;
 
-	POBJ_INFO       GI_OBJTable[MAX_OBJECTS];
-	INT             GI_ObjectLevelItems;
+	FLOAT              GI_WAISpawnCoolDown;
+	FLOAT              GI_WAICurSpawnCoolDown;
+	PWEAPON_AUTO_INFO  GI_WAITable[MAX_WAI_OBJECTS];
 
 	PSDL_Texture    GI_MainTexture;
 	PSDL_Texture    GI_TextTexture;

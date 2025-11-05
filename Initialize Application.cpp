@@ -101,8 +101,12 @@ INT InitializeApplication(PGAME_INFO GIptr)
 	}
 
 	PLAYER_Initiate(GIptr);
-	OBJ_Initiate(GIptr);
-	OBJ_BuildWAVEOne(GIptr);
+	EBI_Initiate(GIptr);
+	WAI_Initiate(GIptr);
+	LEVEL_BuildOne(GIptr);
+
+	GIptr->GI_EBICurSpawnCoolDown = 0.0f;
+	GIptr->GI_EBISpawnCoolDown = EBI_COOL_DOWN_FRAMES;
 
 	return(TRUE);
 }
