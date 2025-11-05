@@ -41,6 +41,9 @@ INT PLAYER_Move(PGAME_INFO GIptr)
 
 	if (Dist > 1.0f) 
 	{
+		GIptr->GI_SaveDirX = DX / Dist;
+		GIptr->GI_SaveDirY = DY / Dist;
+
 		VX = (DX / Dist) * PLAYER_SPEED * GIptr->GI_DeltaTime;
 		VY = (DY / Dist) * PLAYER_SPEED * GIptr->GI_DeltaTime;
 		PIptr->PI_GlobalPos.x += VX;

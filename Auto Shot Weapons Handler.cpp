@@ -25,7 +25,7 @@ INT WAI_Initiate(PGAME_INFO GIptr)
 		WAIptr->WAI_FramesInTimer = 8;
 		WAIptr->WAI_MaxSprites = 8;
 		WAIptr->WAI_Scale = 1.0;
-		WAIptr->WAI_Speed = 500;
+		WAIptr->WAI_Speed = WAI_SPEED;
 		WAIptr->WAI_SpriteList = WeaponAutoSprites;
 
 		WAIptr->WAI_GlobalPos.w = (WeaponAutoSprites->w * WAIptr->WAI_Scale);
@@ -79,8 +79,6 @@ INT WAI_GetClosestEnemy(PGAME_INFO GIptr, PWEAPON_AUTO_INFO WAIptr)
 
 		if (EBIptr->EBI_ActiveFlag == OBJECT_IS_ACTIVE)
 		{
-			//			DX = WAIptr->WAI_GlobalPos.x - (EBIptr->EBI_GlobalPos.x + EBIptr->EBI_GlobalPos.w / 2);
-			//			DY = WAIptr->WAI_GlobalPos.y - (EBIptr->EBI_GlobalPos.y + EBIptr->EBI_GlobalPos.h / 2);
 			DX = EBIptr->EBI_GlobalPos.x - (WAIptr->WAI_GlobalPos.x + WAIptr->WAI_GlobalPos.w / 2);
 			DY = EBIptr->EBI_GlobalPos.y - (WAIptr->WAI_GlobalPos.y + WAIptr->WAI_GlobalPos.h / 2);
 			Dist = sqrtf(DX * DX + DY * DY);

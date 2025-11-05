@@ -161,8 +161,8 @@ struct _GAME_INFO
 
 	FLOAT              GI_AddObjectsCooldown;
 
-	FLOAT              GI_MaxPower;
-	FLOAT              GI_CurrentPower;
+	FLOAT              GI_SaveDirX;
+	FLOAT              GI_SaveDirY;
 
 	PLAYER_INFO        GI_Player;
 	CHAR               GI_PlayerName[MAX_NAME_LENGTH + 1];

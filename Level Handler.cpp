@@ -34,7 +34,7 @@ INT LEVEL_BuildOne(PGAME_INFO GIptr)
 
 		for( ; ; )
 		{
-			EBIptr->EBI_GlobalPos.x = UTIL_RandomFloatRange(-40, 300);
+			EBIptr->EBI_GlobalPos.x = UTIL_RandomFloatRange(-40, 2000);
 			EBIptr->EBI_GlobalPos.y = UTIL_RandomFloatRange(-40, 1200);
 			if ((EBI_CheckForCollisionWithOtherObjects(GIptr, EBIptr)) == NO_COLLISION_DETECTED) break;
 		}

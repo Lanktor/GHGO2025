@@ -43,11 +43,12 @@ typedef Mix_Chunk *PMix_Chunk, **PPMix_Chunk;
 #define NO_COLLISION_DETECTED 5006
 #define COLLISION_DETECTED    5007
 
-#define MAX_EBI_OBJECTS        200
+#define MAX_EBI_OBJECTS        500
 #define EBI_COOL_DOWN_FRAMES   9600 // 2mins * 80 Seconds * 60 FPS
 
-#define WAI_COOL_DOWN_FRAMES   160 // 2 Seconds * 80 FPS
-#define MAX_WAI_OBJECTS        100
+#define WAI_COOL_DOWN_FRAMES   60 // 2 Seconds * 80 FPS
+#define MAX_WAI_OBJECTS        1000
+#define WAI_SPEED              1000
 
 #define GAME_VERSION          100
 #define GAME_BASE_SCORE       5000

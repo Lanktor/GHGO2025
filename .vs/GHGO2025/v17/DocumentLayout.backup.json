@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\GHGO2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Enemy Basic Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Enemy Basic Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Player Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Player Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Structs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Structs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Auto Shot Weapons Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Auto Shot Weapons Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Game Loop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Game Loop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Level Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Level Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Structs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Structs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Enemy Basic Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Enemy Basic Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Game Loop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Game Loop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Prototype.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,24 +39,12 @@
       "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Tables.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Level Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Level Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Initialize Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Initialize Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Timer Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Timer Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Defines.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Player Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|solutionrelative:Player Handler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F92E904A-D17D-4372-A8BC-787EB7B64710}|GHGO2025.vcxproj|C:\\GHGO2025\\Test Stuff.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -94,11 +94,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Timer Handler.cpp",
               "DocumentMoniker": "C:\\GHGO2025\\Timer Handler.cpp",
               "RelativeDocumentMoniker": "Timer Handler.cpp",
@@ -106,63 +106,63 @@
               "RelativeToolTip": "Timer Handler.cpp",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-05T15:11:43.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T15:11:43.302Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Auto Shot Weapons Handler.cpp",
               "DocumentMoniker": "C:\\GHGO2025\\Auto Shot Weapons Handler.cpp",
               "RelativeDocumentMoniker": "Auto Shot Weapons Handler.cpp",
               "ToolTip": "C:\\GHGO2025\\Auto Shot Weapons Handler.cpp",
               "RelativeToolTip": "Auto Shot Weapons Handler.cpp",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAlwH8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-05T14:51:58.742Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Level Handler.cpp",
               "DocumentMoniker": "C:\\GHGO2025\\Level Handler.cpp",
               "RelativeDocumentMoniker": "Level Handler.cpp",
               "ToolTip": "C:\\GHGO2025\\Level Handler.cpp",
               "RelativeToolTip": "Level Handler.cpp",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAlwA0AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAlwAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-05T14:38:23.661Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Enemy Basic Handler.cpp",
               "DocumentMoniker": "C:\\GHGO2025\\Enemy Basic Handler.cpp",
               "RelativeDocumentMoniker": "Enemy Basic Handler.cpp",
               "ToolTip": "C:\\GHGO2025\\Enemy Basic Handler.cpp",
               "RelativeToolTip": "Enemy Basic Handler.cpp",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAGoAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-05T14:23:27.798Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "Player Handler.cpp",
               "DocumentMoniker": "C:\\GHGO2025\\Player Handler.cpp",
               "RelativeDocumentMoniker": "Player Handler.cpp",
               "ToolTip": "C:\\GHGO2025\\Player Handler.cpp",
               "RelativeToolTip": "Player Handler.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-04T12:27:51.208Z"
+              "WhenOpened": "2025-11-04T12:27:51.208Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Prototype.h",
               "DocumentMoniker": "C:\\GHGO2025\\Prototype.h",
               "RelativeDocumentMoniker": "Prototype.h",
@@ -170,12 +170,11 @@
               "RelativeToolTip": "Prototype.h",
               "ViewState": "AgIAABwAAAAAAAAAAAAlwDEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-01T20:22:21.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-01T20:22:21.434Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Initialize Application.cpp",
               "DocumentMoniker": "C:\\GHGO2025\\Initialize Application.cpp",
               "RelativeDocumentMoniker": "Initialize Application.cpp",
@@ -183,12 +182,11 @@
               "RelativeToolTip": "Initialize Application.cpp",
               "ViewState": "AgIAAFwAAAAAAAAAAAAlwG0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-01T20:09:25.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-01T20:09:25.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Tables.cpp",
               "DocumentMoniker": "C:\\GHGO2025\\Tables.cpp",
               "RelativeDocumentMoniker": "Tables.cpp",
@@ -196,37 +194,37 @@
               "RelativeToolTip": "Tables.cpp",
               "ViewState": "AgIAACIAAAAAAAAAAADwvzIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-01T17:11:00.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-01T17:11:00.86Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Structs.h",
               "DocumentMoniker": "C:\\GHGO2025\\Structs.h",
               "RelativeDocumentMoniker": "Structs.h",
               "ToolTip": "C:\\GHGO2025\\Structs.h",
               "RelativeToolTip": "Structs.h",
-              "ViewState": "AgIAAEEAAAAAAAAAAADgv0sAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAI8AAAAAAAAAAADgv6QAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-01T17:05:56.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "Defines.h",
               "DocumentMoniker": "C:\\GHGO2025\\Defines.h",
               "RelativeDocumentMoniker": "Defines.h",
               "ToolTip": "C:\\GHGO2025\\Defines.h",
               "RelativeToolTip": "Defines.h",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHIAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-01T17:05:40.719Z"
+              "WhenOpened": "2025-11-01T17:05:40.719Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Game Loop.cpp",
               "DocumentMoniker": "C:\\GHGO2025\\Game Loop.cpp",
               "RelativeDocumentMoniker": "Game Loop.cpp",
@@ -234,8 +232,7 @@
               "RelativeToolTip": "Game Loop.cpp",
               "ViewState": "AgIAAFkAAAAAAAAAAAAlwGsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-03T15:01:35.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T15:01:35.421Z"
             },
             {
               "$type": "Document",
