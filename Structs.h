@@ -177,6 +177,19 @@ struct _GAME_INFO
 	FLOAT              GI_WAICurSpawnCoolDown;
 	PWEAPON_AUTO_INFO  GI_WAITable[MAX_WAI_OBJECTS];
 
+	FLOAT              GI_SGISpawnCoolDown;
+	FLOAT              GI_SGICurSpawnCoolDown;
+	FLOAT              GI_SGISpreadAngle;
+	FLOAT              GI_SGIDistance;
+
+	FLOAT              GI_LevelCoolDownInSeconds;
+	FLOAT              GI_LevelCurCoolDown;
+
+	FLOAT              GI_ForceFieldSize;
+	FLOAT              GI_ForceFieldHealth;
+	FLOAT              GI_ForceFieldAngle;
+
+
 	PSDL_Texture    GI_MainTexture;
 	PSDL_Texture    GI_TextTexture;
 	PSDL_Texture    GI_RulesTexture;

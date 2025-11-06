@@ -39,6 +39,10 @@ INT WAI_Update(PGAME_INFO GIptr);
 INT WAI_Move(PGAME_INFO GIptr);
 INT WAI_Render(PGAME_INFO GIptr);
 
+INT FF_Render(PGAME_INFO GIptr);
+
+
+INT   UTIL_CheckInsideCircle(PGAME_INFO GIptr, PSDL_FRect Objptr, FLOAT CX, FLOAT CY, FLOAT Rad);
 FLOAT UTIL_DegreesToRadians(FLOAT Degrees);
 INT   UTIL_DrawCollisionBox(PGAME_INFO GIptr, PSDL_FRect SrceBox, SDL_Color Color, INT BorderSize);
 FLOAT UTIL_RandomFloatRange(FLOAT Min, FLOAT Max);
@@ -49,6 +53,8 @@ INT LEVEL_BuildOne(PGAME_INFO GIptr);
 
 INT TIMER_Update(PGAME_INFO GIptr);
 INT TIMER_CheckExpired(PGAME_INFO GIptr);
+
+void SGI_CheckEnemiesInCone(PGAME_INFO GIptr, float coneAngleDeg, float coneDistance);
 
 
 INT TEST_Initiate(PGAME_INFO GIptr);

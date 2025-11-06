@@ -103,10 +103,19 @@ INT InitializeApplication(PGAME_INFO GIptr)
 	PLAYER_Initiate(GIptr);
 	EBI_Initiate(GIptr);
 	WAI_Initiate(GIptr);
-	LEVEL_BuildOne(GIptr);
 
 	GIptr->GI_EBICurSpawnCoolDown = 0.0f;
 	GIptr->GI_EBISpawnCoolDown = EBI_COOL_DOWN_FRAMES;
 
+	GIptr->GI_SGICurSpawnCoolDown = 0.0f;
+	GIptr->GI_SGISpawnCoolDown = SGI_COOL_DOWN_FRAMES;
+	GIptr->GI_SGIDistance = 200;
+	GIptr->GI_SGISpreadAngle = 45;
+
+	GIptr->GI_ForceFieldSize = FORCE_FIELD_SIZE;
+	GIptr->GI_ForceFieldHealth = FORCE_FIELD_HEALTH;
+	GIptr->GI_ForceFieldAngle = 0;
+
+	LEVEL_BuildOne(GIptr);
 	return(TRUE);
 }

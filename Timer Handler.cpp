@@ -11,6 +11,7 @@ INT TIMER_Update(PGAME_INFO GIptr)
 {
 	GIptr->GI_EBICurSpawnCoolDown++;
 	GIptr->GI_WAICurSpawnCoolDown++;
+	GIptr->GI_SGICurSpawnCoolDown++;
 
 	return(TRUE);
 }
@@ -27,6 +28,12 @@ INT TIMER_CheckExpired(PGAME_INFO GIptr)
 	{
 		GIptr->GI_WAICurSpawnCoolDown = 0.0f;
 		WAI_Spawn(GIptr);
+	}
+
+	if (GIptr->GI_SGICurSpawnCoolDown >= GIptr->GI_SGISpawnCoolDown)
+	{
+		GIptr->GI_SGICurSpawnCoolDown = 0.0f;
+		SGI_CheckEnemiesInCone(GIptr, 45.0f, 200.0f);
 	}
 
 	return(TRUE);

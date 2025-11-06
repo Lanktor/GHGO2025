@@ -136,12 +136,14 @@
     <ClCompile Include="Button Handler.cpp" />
     <ClCompile Include="End of Game Handler.cpp" />
     <ClCompile Include="Enemy Basic Handler.cpp" />
+    <ClCompile Include="Force Field Handler.cpp" />
     <ClCompile Include="Game Loop.cpp" />
     <ClCompile Include="Initialize Application.cpp" />
     <ClCompile Include="Level Handler.cpp" />
     <ClCompile Include="Main Application.cpp" />
     <ClCompile Include="Player Handler.cpp" />
     <ClCompile Include="Rules Handler.cpp" />
+    <ClCompile Include="Shot Gun Weapons Handler.cpp" />
     <ClCompile Include="Start of Game Handler.cpp" />
     <ClCompile Include="Tables.cpp" />
     <ClCompile Include="Terminate Application.cpp" />

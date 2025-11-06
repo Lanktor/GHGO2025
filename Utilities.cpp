@@ -60,3 +60,26 @@ INT UTIL_DrawCollisionBox(PGAME_INFO GIptr, PSDL_FRect SrceBox, SDL_Color Color,
 
   return(TRUE);
 }
+
+INT UTIL_CheckInsideCircle(PGAME_INFO GIptr, PSDL_FRect Objptr, FLOAT CX, FLOAT CY, FLOAT Rad)
+{
+  FLOAT EX, EY, EnemyRadius;
+  FLOAT DX, DY, Dist;
+  FLOAT TotalRadius;
+
+  EX = Objptr->x + (Objptr->w * .5f);
+  EY = Objptr->y + (Objptr->h * .5f);
+
+  EnemyRadius = (Objptr->w + Objptr->h) * .25f;
+
+  DX = (EX - CX - 16);
+  DY = (EY - CY - 16);
+
+  Dist = DX * DX + DY * DY;
+
+  TotalRadius = Rad + EnemyRadius;
+
+  return(Dist <= (TotalRadius * TotalRadius));
+
+}
+

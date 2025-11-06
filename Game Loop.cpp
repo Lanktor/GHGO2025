@@ -113,7 +113,7 @@ INT GameLoop(PGAME_INFO GIptr)
 		PLAYER_Render(GIptr);
 		EBI_Render(GIptr);
 		WAI_Render(GIptr);
-
+		FF_Render(GIptr);
 
 		CheckForLevelCompletion(GIptr);
 
@@ -137,5 +137,11 @@ printf("FPS: [%d] Delay = [%d]\n", GIptr->GI_FrameCounter, GIptr->GI_FRAME_DELAY
 
 INT CheckForLevelCompletion(PGAME_INFO GIptr)
 {
+	GIptr->GI_LevelCurCoolDown++;
+	if (GIptr->GI_LevelCurCoolDown >= GIptr->GI_LevelCoolDownInSeconds)
+	{
+		printf("Level Completed\n");
+		GIptr->GI_LevelCurCoolDown = 0;
+	}
 	return(TRUE);
 }

@@ -28,6 +28,8 @@ typedef Mix_Chunk *PMix_Chunk, **PPMix_Chunk;
 
 #define TRUE  true
 #define FALSE false
+#define DEG2RAD 0.017453292f
+#define PI 3.14159265358979323846f
 #define RANDOM_SEED 3556830853
 #define END_OF_LIST 65535
 
@@ -43,14 +45,19 @@ typedef Mix_Chunk *PMix_Chunk, **PPMix_Chunk;
 #define NO_COLLISION_DETECTED 5006
 #define COLLISION_DETECTED    5007
 
-#define MAX_EBI_OBJECTS        500
+#define MAX_EBI_OBJECTS        5000
 #define EBI_COOL_DOWN_FRAMES   9600 // 2mins * 80 Seconds * 60 FPS
 
-#define WAI_COOL_DOWN_FRAMES   60 // 2 Seconds * 80 FPS
+#define WAI_COOL_DOWN_FRAMES   160 // 2 Seconds * 80 FPS
 #define MAX_WAI_OBJECTS        1000
 #define WAI_SPEED              1000
 
-#define GAME_VERSION          100
+#define SGI_COOL_DOWN_FRAMES   160 // 2 Seconds * 80 FPS
+
+#define FORCE_FIELD_SIZE       200
+#define FORCE_FIELD_HEALTH     1000
+
+#define GAME_VERSION          200
 #define GAME_BASE_SCORE       5000
 #define GAME_MAX_LEVEL_TIME   300 // Seconds
 
@@ -75,6 +82,8 @@ typedef Mix_Chunk *PMix_Chunk, **PPMix_Chunk;
 #define LEVEL_EIGHT 8
 #define LEVEL_NINE  9
 #define LEVEL_TEN  10
+
+#define LEVEL_COOL_DOWN (5 * 60)
 
 #define PLAYER_SPEED 100
 #define MAX_TEST_PLAYERS 5000

@@ -35,7 +35,12 @@ SDL_FRect HiScoreBox[] =
 	{ 215,  140, 700, 400},
 };
 
-SDL_FRect EnemyBasicSprites[] = 
+SDL_FRect ForceFieldSprite[] =
+{
+	{   0,  25, 328, 328},
+};
+
+SDL_FRect EnemyBasicSprites[] =
 {
 	{   0,  32,  32,  32},
 	{  32,  32,  32,  32},
@@ -58,6 +63,8 @@ SDL_FRect WeaponAutoSprites[] =
 	{  32,   0,  16,  16},
 	{  16,   0,  16,  16},
 };
+
+
 
 
 SDL_FRect PlayerAnim[] =
