@@ -27,7 +27,7 @@ INT LEVEL_BuildOne(PGAME_INFO GIptr)
 		EBIptr->EBI_FramesInTimer = 8;
 		EBIptr->EBI_FrameTimer = 0;
 		EBIptr->EBI_MaxSprites = 8;
-		EBIptr->EBI_Scale = .5;
+		EBIptr->EBI_Scale = 0.5f;
 		EBIptr->EBI_Speed = (PLAYER_SPEED / 2);
 		EBIptr->EBI_SpriteList = EnemyBasicSprites;
 
