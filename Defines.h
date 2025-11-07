@@ -54,7 +54,7 @@ typedef Mix_Chunk *PMix_Chunk, **PPMix_Chunk;
 
 #define SGI_COOL_DOWN_FRAMES   160 // 2 Seconds * 80 FPS
 
-#define FORCE_FIELD_SIZE       200
+#define FORCE_FIELD_SIZE       300
 #define FORCE_FIELD_HEALTH     1000
 
 #define GAME_VERSION          200
@@ -83,7 +83,12 @@ typedef Mix_Chunk *PMix_Chunk, **PPMix_Chunk;
 #define LEVEL_NINE  9
 #define LEVEL_TEN  10
 
-#define LEVEL_COOL_DOWN (5 * 60)
+#define WAVE_ONE_COOL_DOWN    60
+#define WAVE_TWO_COOL_DOWN   180
+#define WAVE_THREE_COOL_DOWN 300
+#define WAVE_FOUR_COOL_DOWN  420
+#define WAVE_FIVE_COOL_DOWN  600
+#define WAVE_BOSS            840
 
 #define PLAYER_SPEED 100
 #define MAX_TEST_PLAYERS 5000
@@ -116,7 +121,7 @@ typedef Mix_Chunk *PMix_Chunk, **PPMix_Chunk;
 #define BUTTON_IDENT_NONE      1100
 
 
-#define BACKGROUND_TEXTURE   "Resources//Background Texture.png"
+#define BACKGROUND_TEXTURE   "Resources//Background Texture 2.png"
 #define RULESSCREEN_TEXTURE  "Resources//RulesScreen.png"
 #define STARTSCREEN_TEXTURE  "Resources//StartofGameScreen.png"
 #define ENDSCREEN_TEXTURE    "Resources//EndOfGameScreen.png"

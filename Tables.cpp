@@ -40,6 +40,13 @@ SDL_FRect ForceFieldSprite[] =
 	{   0,  25, 328, 328},
 };
 
+SDL_FRect GingerBreadmanSprites[] =
+{
+	{   0, 450,  48,  96},
+	{  48, 450,  48,  96},
+	{  96, 450,  48,  96},
+};
+
 SDL_FRect EnemyBasicSprites[] =
 {
 	{   0,  32,  32,  32},
@@ -63,10 +70,7 @@ SDL_FRect WeaponAutoSprites[] =
 	{  32,   0,  16,  16},
 	{  16,   0,  16,  16},
 };
-
-
-
-
+/*
 SDL_FRect PlayerAnim[] =
 {
 	{   0,    0,  32,  32},
@@ -74,6 +78,16 @@ SDL_FRect PlayerAnim[] =
 	{  64,    0,  32,  32},
 	{  32,    0,  32,  32},
 	{   0,    0,  32,  32},
+};
+*/
+
+SDL_FRect PlayerAnim[] =
+{
+	{   0,  400,  32,  32},
+	{  96,  400,  32,  32},
+	{ 192,  400,  32,  32},
+	{ 288,  400,  32,  32},
+	{ 384,  400,  32,  32},
 };
 
 SDL_FRect FontAlphaWhite[] =

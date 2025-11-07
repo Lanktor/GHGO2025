@@ -110,12 +110,12 @@ INT GameLoop(PGAME_INFO GIptr)
 		SDL_SetRenderDrawColor(GIptr->GI_MainRenderer, 0x80, 0x80, 0x80, 0x00);
 		SDL_RenderClear(GIptr->GI_MainRenderer);
 
+		SDL_RenderTexture(GIptr->GI_MainRenderer, GIptr->GI_BackgroundTexture, NULL, NULL);
 		PLAYER_Render(GIptr);
 		EBI_Render(GIptr);
 		WAI_Render(GIptr);
-		FF_Render(GIptr);
-
-		CheckForLevelCompletion(GIptr);
+//		FF_Render(GIptr);
+		TIMER_RenderLevelTimer(GIptr);
 
 		SDL_RenderPresent(GIptr->GI_MainRenderer);
 
@@ -128,20 +128,10 @@ INT GameLoop(PGAME_INFO GIptr)
 printf("FPS: [%d] Delay = [%d]\n", GIptr->GI_FrameCounter, GIptr->GI_FRAME_DELAY - GIptr->GI_FrameTime);
 			GIptr->GI_FrameCounter = 0;
 			GIptr->GI_SecondsCounter = SDL_GetTicks();
+			TIMER_UpdateLevelTimer(GIptr);
 		}
 	}
 
 	EndOfGameHandler(GIptr);
-	return(TRUE);
-}
-
-INT CheckForLevelCompletion(PGAME_INFO GIptr)
-{
-	GIptr->GI_LevelCurCoolDown++;
-	if (GIptr->GI_LevelCurCoolDown >= GIptr->GI_LevelCoolDownInSeconds)
-	{
-		printf("Level Completed\n");
-		GIptr->GI_LevelCurCoolDown = 0;
-	}
 	return(TRUE);
 }

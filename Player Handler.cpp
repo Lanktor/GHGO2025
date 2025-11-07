@@ -19,7 +19,7 @@ INT PLAYER_Initiate(PGAME_INFO GIptr)
 	PIptr->PI_FrameTimer = 0;
 	PIptr->PI_MaxSprites = 5;
 	PIptr->PI_CurSprite = 0;
-	PIptr->PI_Scale = 1.0f;
+	PIptr->PI_Scale = 3.0f;
 	PIptr->PI_GlobalPos.x = (1920 / 2);
 	PIptr->PI_GlobalPos.y = (1080 / 2);
 	PIptr->PI_GlobalPos.w = PlayerAnim->w * PIptr->PI_Scale;
@@ -78,13 +78,16 @@ INT PLAYER_Render(PGAME_INFO GIptr)
 	INT          I;
 	PPLAYER_INFO PIptr;
 	PSDL_FRect   Srceptr;
+	SDL_FlipMode FlipMode;
 
 	PIptr = &GIptr->GI_Player;
 
 	Srceptr = &PIptr->PI_SpriteList[PIptr->PI_CurSprite];
-	SDL_RenderTexture(GIptr->GI_MainRenderer, GIptr->GI_PlayerTexture, Srceptr, &PIptr->PI_GlobalPos);
+//	SDL_RenderTexture(GIptr->GI_MainRenderer, GIptr->GI_MainTexture, Srceptr, &PIptr->PI_GlobalPos);
+	FlipMode = (GIptr->GI_SaveDirX >= 0) ? SDL_FLIP_NONE : SDL_FLIP_HORIZONTAL;
+	SDL_RenderTextureRotated(GIptr->GI_MainRenderer, GIptr->GI_MainTexture, Srceptr, &PIptr->PI_GlobalPos, 0.0f, NULL, FlipMode);
 
-	UTIL_DrawCollisionBox(GIptr, &PIptr->PI_GlobalPos, {0x00, 0x00, 0xFF, 0x00}, 2);
+//	UTIL_DrawCollisionBox(GIptr, &PIptr->PI_GlobalPos, {0x00, 0x00, 0xFF, 0x00}, 2);
 
 	return(TRUE);
 }

@@ -182,8 +182,12 @@ struct _GAME_INFO
 	FLOAT              GI_SGISpreadAngle;
 	FLOAT              GI_SGIDistance;
 
-	FLOAT              GI_LevelCoolDownInSeconds;
 	FLOAT              GI_LevelCurCoolDown;
+	FLOAT              GI_LevelWaveOneCoolDown;
+	FLOAT              GI_LevelWaveTwoCoolDown;
+	FLOAT              GI_LevelPhaseThreeCoolDown;
+	FLOAT              GI_LevelPhaseFourCoolDown;
+	FLOAT              GI_LevelPhaseFiveCoolDown;
 
 	FLOAT              GI_ForceFieldSize;
 	FLOAT              GI_ForceFieldHealth;

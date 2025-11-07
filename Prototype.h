@@ -53,6 +53,8 @@ INT LEVEL_BuildOne(PGAME_INFO GIptr);
 
 INT TIMER_Update(PGAME_INFO GIptr);
 INT TIMER_CheckExpired(PGAME_INFO GIptr);
+INT TIMER_UpdateLevelTimer(PGAME_INFO GIptr);
+INT TIMER_RenderLevelTimer(PGAME_INFO GIptr);
 
 void SGI_CheckEnemiesInCone(PGAME_INFO GIptr, float coneAngleDeg, float coneDistance);
 

@@ -1,7 +1,8 @@
-﻿  Level Handler.cpp
-C:\GHGO2025\Level Handler.cpp(43,120): warning C4805: '==': unsafe mix of type 'INT' and type 'bool' in operation
+﻿  Timer Handler.cpp
+C:\GHGO2025\Timer Handler.cpp(58,39): warning C4244: '=': conversion from 'FLOAT' to 'INT', possible loss of data
+C:\GHGO2025\Timer Handler.cpp(68,44): warning C4244: 'argument': conversion from 'float' to 'INT', possible loss of data
   Generating code
-  2 of 206 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
+  4 of 204 functions ( 2.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     8 functions had inline decision re-evaluated but remain unchanged
   Finished generating code

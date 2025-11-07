@@ -38,3 +38,34 @@ INT TIMER_CheckExpired(PGAME_INFO GIptr)
 
 	return(TRUE);
 }
+
+INT TIMER_UpdateLevelTimer(PGAME_INFO GIptr)
+{
+
+	GIptr->GI_LevelCurCoolDown++;
+
+	return(TRUE);
+
+}
+
+INT TIMER_RenderLevelTimer(PGAME_INFO GIptr)
+{
+	CHAR      Text[1024];
+	INT       Minutes, Seconds;
+	SDL_Color Color;
+	SDL_FRect Dest;
+
+	Minutes = GIptr->GI_LevelCurCoolDown / 60;
+	Seconds = (INT)GIptr->GI_LevelCurCoolDown % 60;
+	Color.r = 0;
+	Color.g = 0;
+	Color.b = 0;
+	Color.a = 255;
+	sprintf_s(Text, sizeof(Text), "WAVE: %02d MIN: %02d SEC: %02d", 0, Minutes, Seconds);
+
+	Dest.x = 1400;
+	Dest.y = 40;
+	TEXT_WriteText(GIptr, Color, &Dest, Text, 1.0f);
+	printf("%s\n", Text);
+	return(TRUE);
+}

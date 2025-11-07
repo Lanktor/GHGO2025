@@ -75,16 +75,10 @@ INT EBI_Move(PGAME_INFO GIptr, PENEMY_BASIC_INFO EBIptr)
 		EBIptr->EBI_GlobalPos.x += VX;
 		EBIptr->EBI_GlobalPos.y += VY;
 
-//		if ((EBI_CheckForCollisionWithOtherObjects(GIptr, EBIptr)) == COLLISION_DETECTED)
+//		if((UTIL_CheckInsideCircle(GIptr, &EBIptr->EBI_GlobalPos, PIptr->PI_GlobalPos.x, PIptr->PI_GlobalPos.y, GIptr->GI_ForceFieldSize / 2.0f)) == true)
 //		{
-//			EBIptr->EBI_GlobalPos.x -= VX;
-//			EBIptr->EBI_GlobalPos.y -= VY;
+//			ApplyForceFieldPush(GIptr, PIptr, EBIptr);
 //		}
-
-		if((UTIL_CheckInsideCircle(GIptr, &EBIptr->EBI_GlobalPos, PIptr->PI_GlobalPos.x, PIptr->PI_GlobalPos.y, GIptr->GI_ForceFieldSize / 2.0f)) == true)
-		{
-			ApplyForceFieldPush(GIptr, PIptr, EBIptr);
-		}
 	}
 
 	return(TRUE);
@@ -164,7 +158,7 @@ void ApplyForceFieldPush(PGAME_INFO GIptr, PLAYER_INFO *PIptr, PENEMY_BASIC_INFO
 
 	// Base push force proportional to depth
 //	float basePush = penetration * 4.0f * GIptr->GI_DeltaTime;  // tweak multiplier
-	float basePush = (penetration + 50.0f) * 4.0f * GIptr->GI_DeltaTime;
+	float basePush = (penetration + 200.0f) * 4.0f * GIptr->GI_DeltaTime;
 	// Add dynamic impulse based on player’s movement direction (bonus push)
 	float moveDirX = GIptr->GI_SaveDirX;
 	float moveDirY = GIptr->GI_SaveDirY;
@@ -207,7 +201,7 @@ INT EBI_Render(PGAME_INFO GIptr)
 	{
 		EBIptr = GIptr->GI_EBITable[I];
 		if(EBIptr->EBI_ActiveFlag == OBJECT_IS_NOT_ACTIVE) continue;
-		SDL_RenderTexture(GIptr->GI_MainRenderer, GIptr->GI_PlayerTexture, &EBIptr->EBI_SpriteList[EBIptr->EBI_CurSprite], &EBIptr->EBI_GlobalPos);
+		SDL_RenderTexture(GIptr->GI_MainRenderer, GIptr->GI_MainTexture, &EBIptr->EBI_SpriteList[EBIptr->EBI_CurSprite], &EBIptr->EBI_GlobalPos);
 	}
 	return(TRUE);
 }
